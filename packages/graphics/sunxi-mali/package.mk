@@ -2,8 +2,8 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="sunxi-mali"
-PKG_VERSION="d691cb93884ca8ac67860502117bbec283dc19aa"
-PKG_SHA256="72969ecf470b9e5ce787c2f8f36242926e1e892af0891924ee59a2cd206de39f"
+PKG_VERSION="418f55585e76f375792dbebb3e97532f0c1c556d"
+PKG_SHA256="b5e7e8f9f2886ed0b273f72ea16ae4868711726fe33e3d80ef24e86269c90fd2"
 PKG_ARCH="arm"
 PKG_LICENSE="nonfree"
 PKG_SITE="https://github.com/bootlin/mali-blobs"
