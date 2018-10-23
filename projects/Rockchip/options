@@ -64,7 +64,7 @@
     FIRMWARE="misc-firmware wlan-firmware dvb-firmware rockchip-firmware"
 
   # additional packages to install
-    ADDITIONAL_PACKAGES="dtc"
+    ADDITIONAL_PACKAGES="dtc brcm_patchram_plus imagedecoder.raw pvr.stalker skykirin-ht1628"
 
   # build and install ATV IR remote support (yes / no)
     ATVCLIENT_SUPPORT="no"
