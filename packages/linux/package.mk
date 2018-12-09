@@ -38,14 +38,14 @@ case "$LINUX" in
     PKG_SOURCE_NAME="linux-$LINUX-$PKG_VERSION.tar.gz"
     ;;
   raspberrypi)
-    PKG_VERSION="3bb3c172defe2255cdc790ab7141864aab9c454f" # 4.18.16
-    PKG_SHA256="694c4d0d5022d4473e3adec03be8a2282ea3d8dea7b062d974fc38daa1fb5475"
+    PKG_VERSION="44e14b21ac57b47246b903b73fa9b9f2d78ff81e" # 4.19.4
+    PKG_SHA256="4cd3aa5167470dacfe1f6e0bcbf09f4461bcb8db1db06b3405c8fcfc0678218a"
     PKG_URL="https://github.com/raspberrypi/linux/archive/$PKG_VERSION.tar.gz"
     PKG_SOURCE_NAME="linux-$LINUX-$PKG_VERSION.tar.gz"
     ;;
   *)
-    PKG_VERSION="4.18.16"
-    PKG_SHA256="beba14e2f07259a545baa1dce5afdaf9f470cdadc8b378ac269e7c8a289c52e6"
+    PKG_VERSION="4.19.4"
+    PKG_SHA256="a38f5606bba1f5611c798541f6c3d43267b8599d9e3167471d4b662e33ff47aa"
     PKG_URL="https://www.kernel.org/pub/linux/kernel/v4.x/$PKG_NAME-$PKG_VERSION.tar.xz"
     PKG_PATCH_DIRS="default"
     ;;
@@ -296,10 +296,6 @@ makeinstall_init() {
 
 post_install() {
   mkdir -p $INSTALL/$(get_full_firmware_dir)/
-    ln -sf /storage/.config/firmware/ $INSTALL/$(get_full_firmware_dir)/updates
-
-  # bluez looks in /etc/firmware/
-    ln -sf /$(get_full_firmware_dir)/ $INSTALL/etc/firmware
 
   # regdb and signature is now loaded as firmware by 4.15+
     if grep -q ^CONFIG_CFG80211_REQUIRE_SIGNED_REGDB= $PKG_BUILD/.config; then
