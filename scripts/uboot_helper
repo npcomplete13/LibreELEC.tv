@@ -25,6 +25,7 @@ devices = {
       'rockpro64' : { 'dtb' : 'rk3399-rockpro64.dtb', 'config' : 'evb-rk3399_config' },
       'sapphire' : { 'dtb' : 'rk3399-sapphire.dtb', 'config' : 'evb-rk3399_config' },
       'skykirinx99' : { 'dtb' : 'rk3399-skykirinx99.dtb', 'config' : 'skykirinx99_config' },
+      'VSRK3399' : { 'dtb' : 'rk3399-videostrong-linux.dtb', 'config' : 'evb-rk3399_config' },
     },
     'TinkerBoard' : { 'rk3288' : { 'dtb' : 'rk3288-miniarm.dtb', 'config' : 'tinker-rk3288_config' }, },
   },

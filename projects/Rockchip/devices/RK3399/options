@@ -30,6 +30,7 @@
     KERNEL_MAKE_EXTRACMD+=" rockchip/rk3399-rock960.dtb"
     KERNEL_MAKE_EXTRACMD+=" rockchip/rk3399-rockpro64.dtb"
     KERNEL_MAKE_EXTRACMD+=" rockchip/rk3399-sapphire.dtb"
+    KERNEL_MAKE_EXTRACMD+=" rockchip/rk3399-videostrong-linux.dtb"
 
     KERNEL_MAKE_EXTRACMD+=" rockchip/rk3399-skykirinx99.dtb"
   # Mali GPU family
